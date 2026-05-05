@@ -67,6 +67,10 @@ Options:
 - Standards Tree (no prefix)
 - Personal Tree (prs. prefix)
 
+```
+Name
+```
+
 Review the [existing subtype names](https://www.iana.org/assignments/media-types). See also [RFC 2046](https://www.iana.org/go/rfc2046) and [RFC 6838](https://www.iana.org/go/rfc6838) (sections 3 and 4.2).
 
 Registrations in the standards tree must be approved by the IESG or correspond to a formal publication by a recognized standards body. See [RFC 6838](https://www.iana.org/go/rfc6838) (section 3.1).
