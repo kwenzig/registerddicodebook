@@ -37,7 +37,7 @@ When referring to specifications, please provide URLs (if applicable).
 What is the media type name?
 
 ```
-Selection Option: application, text etc.
+application
 ```
 
 Options:
@@ -59,7 +59,7 @@ See the [Top-Level Media Types](https://www.iana.org/assignments/top-level-media
 What is the media subtype name? (The prefix, if any, will be taken from the drop-down menu and should be omitted from the text field.)
 
 ```
-Selection Option: vnd/no/prs
+Standards Tree (no prefix)
 ```
 
 Options:
@@ -80,7 +80,7 @@ The appearance of a dot (".") in a standards-tree subtype name would require reg
 Describe the required parameters. (If none, enter "N/A.")
 
 ```
-Parameter
+N/A.
 ```
 
 See [RFC 2046](https://www.iana.org/go/rfc2046), section 1, and [RFC 6838](https://www.iana.org/go/rfc6838), section 4.3.
@@ -92,7 +92,8 @@ Text types should pay attention to the discussion of the charset parameter in [R
 Describe the optional parameters. (If none, enter "N/A.")
 
 ```
-Parameter
+version: The version of the DDI-Codebook specification (e.g., "2.5").
+charset: Same as for application/xml as specified in RFC 7303.
 ```
 
 See [RFC 2046](https://www.iana.org/go/rfc2046), section 1, and [RFC 6838](https://www.iana.org/go/rfc6838), section 4.3.
@@ -100,7 +101,7 @@ See [RFC 2046](https://www.iana.org/go/rfc2046), section 1, and [RFC 6838](https
 #### Encoding Considerations
 
 ```
-Select option: 7-/8-bit/binary/framed
+binary (this media type may require encoding on transports not capable of handling binary)
 ```
 
 Options:
@@ -135,7 +136,12 @@ If the format is encoded using UTF-16, the encoding is always "binary."
 Provide a discussion of the security considerations.
 
 ```
-Consideration
+As a format using the +xml structured syntax suffix, it is subject to the 
+security risks associated with XML, such as XML External Entity (XXE) attacks
+and "Billion Laughs" denial-of-service attacks. The format does not contain
+"active content" (executable scripts), but it provides metadata for research 
+processes that must be interpreted carefully by receiving applications to avoid
+resource exhaustion or unauthorized information disclosure.
 ```
 
 All media type registrations must describe their security considerations; simply saying there are none or leaving the section blank is unacceptable.
@@ -159,7 +165,24 @@ See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.6.
 Provide a discussion of the interoperability considerations.
 
 ```
-Consideration
+DDI-Codebook is a lightweight representation of the DDI standard 
+(ISO/PAS 25955:2026, also described as DDI Common Core 1.0, 
+https://doi.org/10.5281/zenodo.17297309) intended primarily for documenting
+simple survey data. Interoperability is ensured through the use of a single,
+canonical data format defined by a publicly available XML Schema. Users 
+should validate instances against the specific schema version referenced. 
+While the XML Schema ensures structural consistency, independent 
+implementations must account for potential schema changes between major or
+minor versions. Furthermore, interoperability considerations for the 
+underlying XML syntax are handled in accordance with RFC 7303.
+
+The canonical expression of DDI 1.* through 2.1 is a Document Type Definition 
+(DTD), although XML Schema versions have been created. The DTD can be 
+converted to a schema using XML software, but the DTD should be used as the 
+authoritative source for instance creation and validation.
+
+The DDI-Codebook development line is backward compatible meaning that instances 
+compliant with DDI versions 1 – 2.1 will also be compliant with version 2.5.
 ```
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.5.
@@ -169,7 +192,10 @@ See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.5.
 Provide references to the published specification.
 
 ```
-Specification
+- DDI-Codebook v2.5: 
+  http://ddialliance.org/Specification/DDI-Codebook/2.5/.
+- XML Schema Entry Point:
+  http://ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd
 ```
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.10.
@@ -179,7 +205,8 @@ See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.10.
 Describe applications which use/will use this media type.
 
 ```
-Applications
+Metadata management tools used in data repositories, social science archives,
+statistical software packages, within research and academia.
 ```
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.5.
@@ -187,7 +214,7 @@ See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.5.
 #### Fragment Identifier Considerations
 
 ```
-Consideration
+Identical to the rules for application/xml as defined in RFC 7303.
 ```
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.11.
@@ -195,7 +222,7 @@ See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.11.
 #### Restrictions on Usage
 
 ```
-Restriction
+N/A.
 ```
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.9.
@@ -205,7 +232,7 @@ See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.9.
 Is this a request for provisional registration only? (Vendor-tree and personal-tree requests must select "No.")
 
 ```
-Select option: Yes/No
+No
 ```
 
 Options:
@@ -221,37 +248,37 @@ See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.12.
 _Deprecated alias names for this type_
 
 ```
-Alias
+N/A.
 ```
 
 _Magic number(s)_
 
 ```
-Number
+N/A.
 ```
 
 _File extension(s)_
 
 ```
-Extension
+.xml
 ```
 
 _Macintosh File Type Code(s)_
 
 ```
-Code
+N/A.
 ```
 
 _Object Identifier(s) or OID(s) — See [RFC 1494](https://www.iana.org/go/rfc1494)._
 
 ```
-Identifiers
+N/A.
 ```
 
 #### Intended Usage
 
 ```
-Select Option: COMMON/LIMITED/OBSOLETE
+COMMON
 ```
 
 Options:
@@ -262,7 +289,7 @@ Options:
 _Additional information (if necessary):_
 
 ```
-Information
+N/A.
 ```
 
 "LIMITED USE" can be appropriate when the media type is restricted in its usage, such as when it is used only in a particular protocol (e.g. HTTP, but not email) or application, and its use is not recommended in other contexts.
@@ -270,7 +297,7 @@ Information
 #### Other Information & Comments
 
 ```
-Other
+N/A.
 ```
 
 #### Contact Person
@@ -293,7 +320,7 @@ Email
 _Author/Change Controller (for standards-tree registrations, this is typically the standards body)_
 
 ```
-Author
+DDI Alliance, https://ddialliance.org/
 ```
 
 By submitting my personal data, I agree that my personal data will be processed in accordance with our [Privacy Policy](https://www.icann.org/privacy/policy) and agree to abide by the website [Terms of Service](https://www.icann.org/privacy/tos).
