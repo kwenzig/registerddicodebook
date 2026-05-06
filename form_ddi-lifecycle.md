@@ -169,14 +169,31 @@ See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.6.
 Provide a discussion of the interoperability considerations.
 
 ```
-DDI-Lifecycle is a comprehensive version of the DDI standard (ISO/PAS 25955:2026, also described as DDI Common Core 1.0, 
-https://doi.org/10.5281/zenodo.17297309) designed to document the full data lifecycle, including classification management, sampling, weighting, and questionnaire design. Interoperability is ensured through the use of a single, canonical data format defined by a publicly available XML Schema. Users should validate instances against the specific schema version referenced. While the XML Schema ensures structural consistency, independent implementations must account for potential schema changes between major or minor versions. Furthermore, interoperability considerations for the underlying XML syntax are handled in accordance with RFC 7303.
+DDI-Lifecycle is a comprehensive representation of the DDI standard 
+(ISO/PAS 25955:2026, also described as DDI Common Core 1.0, 
+https://doi.org/10.5281/zenodo.17297309) designed to document the full data
+lifecycle, including classification management, sampling, weighting, and 
+questionnaire design. Interoperability is ensured through the use of a single,
+canonical data format defined by a publicly available XML Schema. Users should
+validate instances against the specific schema version referenced. While the 
+XML Schema ensures structural consistency, independent implementations must 
+account for potential schema changes between major or minor versions. 
+Furthermore, interoperability considerations for the underlying XML syntax are 
+handled in accordance with RFC 7303.
 
-DDI-Lifecycle 3.3 builds on DDI-Lifecycle 3.2, correcting documented bugs, refining some aspects of the specification and adding new functionality to support in the areas of classification management, sampling, weighting, questionnaire design and introduced changes, which are not backward compatible.
+DDI-Lifecycle 3.3 builds on DDI-Lifecycle 3.2, correcting documented bugs, 
+refining some aspects of the specification and adding new functionality to 
+support in the areas of classification management, sampling, weighting, 
+questionnaire design and introduced changes, which are not backward compatible.
 
-DDI Lifecycle 3.2 introduced changes with were not backward compatible to version 3.1.
+DDI Lifecycle 3.2 introduced changes with were not backward compatible to 
+version 3.1.
 
-DDI-Lifecycle 3.1 reflects the correction of bugs identified by implementers using DDI 3.0, and the resolution of the final URN structure to ensure persistent URNs for all identified elements. Note that DDI-Lifecycle 3.1 is not backward compatible with DDI-Lifecycle 3.0, which was the first release of the standard.
+DDI-Lifecycle 3.1 reflects the correction of bugs identified by implementers 
+using DDI 3.0, and the resolution of the final URN structure to ensure 
+persistent URNs for all identified elements. Note that DDI-Lifecycle 3.1 is not
+backward compatible with DDI-Lifecycle 3.0, which was the first release of the 
+standard.
 ```
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.5.
