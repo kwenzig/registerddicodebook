@@ -196,7 +196,7 @@ See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.5.
 Provide references to the published specification.
 
 ```
-- DDI-Codebook v2.5: 
+- DDI-Codebook 2.5: 
   http://ddialliance.org/Specification/DDI-Codebook/2.5/.
 - XML Schema Entry Point:
   http://ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd
