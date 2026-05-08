@@ -325,7 +325,7 @@ Name
 _Contact Email Address_
 
 ```
-Email
+dditcmgr@gmail.com
 ```
 
 _Author/Change Controller (for standards-tree registrations, this is typically the standards body)_
