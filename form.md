@@ -291,13 +291,13 @@ Name
 _Contact Email Address_
 
 ```
-Email
+dditcmgr@gmail.com
 ```
 
 _Author/Change Controller (for standards-tree registrations, this is typically the standards body)_
 
 ```
-Author
+DDI Alliance, https://ddialliance.org/
 ```
 
 By submitting my personal data, I agree that my personal data will be processed in accordance with our [Privacy Policy](https://www.icann.org/privacy/policy) and agree to abide by the website [Terms of Service](https://www.icann.org/privacy/tos).
