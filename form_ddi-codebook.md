@@ -20,7 +20,7 @@ We recommend that you read the following RFCs before proceeding with this applic
 #### Your Full Name
 
 ```
-Name
+Name of person submitting this form
 ```
 
 #### Your E-mail
