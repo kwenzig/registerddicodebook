@@ -187,7 +187,7 @@ converted to a schema using XML software, but the DTD should be used as the
 authoritative source for instance creation and validation.
 
 The DDI-Codebook development line is backward compatible meaning that instances 
-compliant with DDI versions 1 – 2.1 will also be compliant with version 2.5.
+compliant with DDI versions 1 – 2.5 will also be compliant with version 2.6.
 ```
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.5.
@@ -197,10 +197,10 @@ See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.5.
 Provide references to the published specification.
 
 ```
-- DDI-Codebook 2.5: 
-  http://ddialliance.org/Specification/DDI-Codebook/2.5/.
+- DDI-Codebook 2.6 (current version): 
+  https://ddialliance.org/ddi-codebook_v2.6.
 - XML Schema Entry Point:
-  http://ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd
+  https://ddialliance.org/Specification/DDI-Codebook/2.6/XMLSchema/codebook.xsd
 ```
 
 See [RFC 6838](https://www.iana.org/go/rfc6838), section 4.10.
